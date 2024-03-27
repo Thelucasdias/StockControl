@@ -1,10 +1,13 @@
 import express from 'express';
 
-const app = express();
+const routes = express();
 
-
-app.get('/', (req, res) => {
+routes.get('/', (req, res) => {
     res.send('welcome to stock control system!')
 });
 
-export default app;
+routes.post('/users', (req, res) => {
+
+})
+
+export default routes;
